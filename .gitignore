@@ -8,5 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
+.venv/
 
+# Environment files
+.env
 *.env
+
+
+# Node and Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts

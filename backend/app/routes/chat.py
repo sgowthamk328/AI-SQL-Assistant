@@ -68,4 +68,4 @@ def question_answering(request: ChatRequest, db: db_dependency):
                 failed_sql=generated_sql,
                 error_message=error_message,
             )
-            retry_count += 1
+            retry_count += 1

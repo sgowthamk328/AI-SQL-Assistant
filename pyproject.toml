@@ -6,7 +6,12 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi[standard]>=0.136.3",
+    "httpx>=0.28.1",
     "ollama>=0.6.2",
+    "pandas>=3.0.5",
     "psycopg2-binary>=2.9.12",
     "sqlalchemy>=2.0.50",
+    "streamlit>=1.63.0",
 ]
+[tool.pyright]
+extraPaths = ["backend"]

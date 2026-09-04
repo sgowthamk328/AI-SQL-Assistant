@@ -124,7 +124,7 @@ def generate_sql_from_question(question: str) -> str:
         options={"num_predict": _MAX_TOKENS},
     )
 
-    return response.message.content.strip()
+    return (response.message.content or "").strip()
 
 
 def generate_corrected_sql(
@@ -148,4 +148,4 @@ def generate_corrected_sql(
         options={"num_predict": _MAX_TOKENS},
     )
 
-    return response.message.content.strip()
+    return (response.message.content or "").strip()
